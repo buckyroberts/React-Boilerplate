@@ -1,0 +1,55 @@
+@import "variables";
+
+$pricing-border: #bbb;
+
+.pricing-table {
+	background-color: #f6f6f6;
+	margin: 0 10px;
+
+	& > * {
+		padding: 10px;
+		text-align: center;
+	}
+
+	.header{
+		background-color: $primary-light;
+
+		.title{
+			color: white;
+			display: block;
+			font-size: 1.75em;
+			font-weight: 300;
+		}
+
+		.sub-title {
+			color: #ddd;
+			display: block;
+			font-weight: 300;
+		}
+	}
+
+	.content, .footer {
+		border-left: 1px solid $pricing-border;
+		border-right: 1px solid $pricing-border;
+	}
+
+	.content {
+
+		ul{
+			color: #444;
+			line-height: 1.6em;
+			margin: 0;
+			padding: 0;
+
+			li{
+				list-style-type: none;
+			}
+		}
+	}
+
+	.footer {
+		border-bottom: 1px solid $pricing-border;
+		border-top: 1px solid $pricing-border;
+	}
+
+}

@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin button($bgColor) {
+	background-color: $bgColor;
+	border: none;
+	color: #FFFFFF;
+	font: $font-default;
+	padding: 8px 12px;
+	text-decoration: none;
+
+	&:hover{
+		background-color: $bgColor * 0.8;
+		cursor:pointer;
+	}
+
+}
+
+.button {
+
+	@each $name, $value in $theme-colors {
+		&-#{$name} {
+			@include button($value);
+		}
+	}
+
+	@each $name, $value in $theme-colors-light {
+		&-#{$name} {
+			@include button($value);
+		}
+	}
+
+}

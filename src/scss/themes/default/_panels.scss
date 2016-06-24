@@ -1,0 +1,21 @@
+@import "variables";
+
+$panel-border: #bbbbbb;
+$panel-padding: 8px;
+
+.panel{
+	background-color: #f4f4f4;
+	border: 1px solid $panel-border;
+	margin-bottom: 15px;
+
+	&-heading{
+		border-bottom: 1px solid $panel-border;
+		font-weight: 700;
+		padding: $panel-padding;
+	}
+
+	&-body{
+		padding: $panel-padding;
+	}
+
+}

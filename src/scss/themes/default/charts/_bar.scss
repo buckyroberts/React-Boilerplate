@@ -1,0 +1,42 @@
+@import "../variables";
+
+$width: 130px;
+$row-height: 34px;
+$line-color: #e2e2e2;
+
+dl {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	.chart-row {
+		background: repeating-linear-gradient(to right, $line-color, $line-color 1px, transparent 1px, transparent 5%);
+		border-right: 1px solid $line-color;
+		margin-left: $width + 20;
+		padding: 2px 0;
+
+		.label {
+			align-items: center;
+			display: flex;
+			height: $row-height;
+			justify-content: flex-end;
+			left: 0;
+			position: absolute;
+			width: $width;
+		}
+
+		.bar{
+			background-color: $success;
+			display: block;
+			height: $row-height - 4;
+			position: relative;
+
+			&:hover, &:focus {
+				background-color: $success * 0.8;
+				cursor: pointer;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,57 @@
+@import "variables";
+
+.media {
+	align-items: flex-start;
+	display: flex;
+
+	.media-figure {
+		margin-right: 0.8em;
+		max-width: 30%;
+	}
+
+	.media-body {
+		flex: 1;
+
+		.title{
+			font-size: 1.1em;
+			font-weight: 500;
+			margin-bottom: 0.2em;
+		}
+
+		// Embedded media object
+		.media{
+			padding-left: 0;
+
+			.media-figure{
+				max-width: 20%;
+			}
+
+			.media-body > .title{
+				font-size: 1em;
+			}
+		}
+
+	}
+
+}
+
+//.media-container{
+//	background-color: #eee;
+//	border: 1px solid lightcoral;
+//	float: left;
+//
+//	.thumbnail{
+//		display: inline-block;
+//		float: left;
+//		width: 30%;
+//	}
+//
+//	.content{
+//		background: $default-light;
+//		display: inline-block;
+//		float: left;
+//		padding: 1em;
+//		width: 70%;
+//	}
+//
+//}

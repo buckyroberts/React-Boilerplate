@@ -1,0 +1,43 @@
+$default: #7f8c8d;
+$danger: #c0392b;
+$info: #8e44ad;
+$primary: #2c3e50;
+$secondary: #2980b9;
+$success: #27ae60;
+$warning: #d35400;
+
+$default-light: #95a5a6;
+$danger-light: #e74c3c;
+$info-light: #9b59b6;
+$primary-light: #34495e;
+$secondary-light: #3498db;
+$success-light: #2ecc71;
+$warning-light: #e67e22;
+
+$theme-colors:
+				(default, $default),
+				(danger, $danger),
+				(info, $info),
+				(primary, $primary),
+				(secondary, $secondary),
+				(success, $success),
+				(warning, $warning);
+
+$theme-colors-light:
+				(default-light, $default-light),
+				(danger-light, $danger-light),
+				(info-light, $info-light),
+				(primary-light, $primary-light),
+				(secondary-light, $secondary-light),
+				(success-light, $success-light),
+				(warning-light, $warning-light);
+
+$font-default: 13px/1.4 'Roboto', sans-serif;
+
+$font-weights:
+				(thin, 100),
+				(light, 300),
+				(normal, 400),
+				(medium, 500),
+				(bold, 700),
+				(black, 900);

@@ -1,0 +1,27 @@
+@import "variables";
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+
+	tr{
+
+		.table-cell{
+			border: 1px solid #ccc;
+			padding: 4px 8px;
+			text-align: left;
+		}
+
+		th {
+			@extend .table-cell;
+			background-color: #eee;
+			font-weight: 500;
+		}
+
+		td {
+			@extend .table-cell;
+		}
+
+	}
+
+}

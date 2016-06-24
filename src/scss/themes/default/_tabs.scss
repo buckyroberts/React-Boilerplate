@@ -1,0 +1,45 @@
+@import "variables";
+
+.tab-nav{
+	background-color: $primary;
+	display: flex;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		list-style-type: none;
+
+		a {
+			border-right: 1px solid rgba(255, 255, 255, 0.05);
+			color: #FFFFFF;
+			display: inline-block;
+			text-decoration: none;
+			padding: 12px 20px;
+
+			&:hover, &.active {
+				background-color: $primary * 0.75;
+				color: #FFFFFF;
+				font-weight: normal;
+			}
+		}
+	}
+
+}
+
+.tab-content{
+	border: 1px solid $default-light;
+	border-top: none;
+
+	padding: 12px 20px;
+
+	& > div {
+		display: none;
+
+		&.visible{
+			display: block;
+		}
+	}
+
+}
+

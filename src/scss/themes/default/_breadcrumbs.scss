@@ -1,0 +1,28 @@
+@import "variables";
+
+.breadcrumbs{
+	color: $default-light * 1.1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+
+	a{
+		color: $default;
+		margin: 0 1px;
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		&:last-child{
+			color: $secondary;
+			font-weight: 600;
+		}
+
+		&:hover {
+			color: $default-light;
+			text-decoration: underline;
+		}
+
+	}
+
+}

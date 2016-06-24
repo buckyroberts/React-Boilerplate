@@ -1,0 +1,16 @@
+@import "variables";
+
+blockquote{
+	border-left: 3px solid #eeeeee;
+	margin: 0;
+	padding-left: 15px;
+
+	cite{
+		color: $default;
+		display: block;
+		font-size: 0.9em;
+		font-style: normal;
+		margin-top: 8px;
+	}
+
+}

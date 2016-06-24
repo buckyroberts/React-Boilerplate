@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import "charts/bar";
+@import "accordion";
+@import "blockquote";
+@import "breadcrumbs";
+@import "buttons";
+@import "headings";
+@import "forms";
+@import "media_objects";
+@import "modal";
+@import "navigation";
+@import "notifications";
+@import "pagination";
+@import "panels";
+@import "pricing_tables";
+@import "progress_bars";
+@import "tables";
+@import "tabs";
+@import "text";
+
+body {
+	font: $font-default;
+}
+
+a, a:visited {
+	color: $secondary;
+	text-decoration: none;
+
+	&:hover{
+		color: $secondary-light;
+	}
+
+	&.active{
+		font-weight: 700;
+	}
+
+}
+
+.nav {
+
+	a, a:visited {
+		color: #ffffff;
+	}
+
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	border-style: none;
+	border-top: 1px solid ($default-light * 1.2);
+}
+
+p{
+	margin: 0 0 0.75em;
+}
+
+pre{
+	border: 1px solid ($default-light * 1.1) !important;
+	padding: 6px 8px !important;
+}
+
+ul{
+	li{
+		list-style-type: disc;
+	}
+}

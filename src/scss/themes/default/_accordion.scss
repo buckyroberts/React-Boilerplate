@@ -1,0 +1,40 @@
+@import "variables";
+
+$accordion-border: #bbbbbb;
+$accordion-padding: 8px;
+
+.accordion {
+	border: 1px solid $accordion-border;
+	border-top: none;
+
+	.item{
+		border-top: 1px solid $accordion-border;
+
+		.title{
+			background-color: #f4f4f4;
+			padding: $accordion-padding;
+
+			&:hover{
+				background-color: #f4f4f4 * 0.9;
+				cursor: pointer;
+			}
+
+		}
+
+		.content{
+			padding: $accordion-padding;
+			display: none;
+		}
+
+		.visible{
+			border-top: 1px solid $accordion-border;
+			display: block;
+		}
+
+		&:last-child{
+			border-bottom: none;
+		}
+
+	}
+
+}

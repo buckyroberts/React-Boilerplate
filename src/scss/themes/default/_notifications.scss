@@ -1,0 +1,21 @@
+@import "variables";
+
+.notification{
+	color: #FFFFFF;
+	margin: 4px 0;
+	padding: 8px 12px;
+}
+
+@each $name, $value in $theme-colors {
+	.notification-#{$name} {
+		@extend .notification;
+		background-color: $value;
+	}
+}
+
+@each $name, $value in $theme-colors-light {
+	.notification-#{$name} {
+		@extend .notification;
+		background-color: $value;
+	}
+}

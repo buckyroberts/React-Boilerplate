@@ -1,0 +1,26 @@
+@import "variables";
+
+.text {
+	font: $font-default;
+
+	@each $name, $value in $theme-colors {
+		&-#{$name} {
+			color: $value;
+		}
+	}
+
+	@each $name, $value in $theme-colors-light {
+		&-#{$name} {
+			color: $value;
+		}
+	}
+
+}
+
+.text {
+	@each $name, $value in $font-weights {
+		&-#{$name} {
+			font-weight: $value;
+		}
+	}
+}

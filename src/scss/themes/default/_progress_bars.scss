@@ -1,0 +1,33 @@
+@import "variables";
+
+.progress-container {
+	background-color: #DDDDDD;
+	overflow: hidden;
+	height: 1.2em;
+	margin: 4px 0;
+
+	.progress{
+		color: #FFF;
+		font-size: 0.9em;
+		height: 100%;
+		line-height: 1.2em;
+		padding: 0.1em 0;
+		text-align: center;
+	}
+
+	@each $name, $value in $theme-colors {
+		.progress-#{$name} {
+			@extend .progress;
+			background-color: $value;
+		}
+	}
+
+	@each $name, $value in $theme-colors-light {
+		.progress-#{$name} {
+			@extend .progress;
+			background-color: $value;
+		}
+	}
+
+}
+
