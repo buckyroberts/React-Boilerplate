@@ -4,9 +4,9 @@ React boilerplate thenewboston tutorials.
 
 ## Getting started
 
-To get started download the repo using the link below. All required files are included.
+To get started simply download the repo using the link below. All required files are included.
 
-https://github.com/buckyroberts/React-Boilerplate.git
+https://github.com/buckyroberts/React-Boilerplate/archive/master.zip
 
 ## Setting up Gulp (optional)
 
