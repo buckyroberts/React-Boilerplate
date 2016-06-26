@@ -14,7 +14,7 @@ You can also use Gulp to add additional build tasks. To use, follow the instruct
 
 Navigate to the root directory and  run the following command:
 ```
-> npm init
+> npm install
 ```
 
 After modules are installed, you can start watching for SCSS changes using the command:
