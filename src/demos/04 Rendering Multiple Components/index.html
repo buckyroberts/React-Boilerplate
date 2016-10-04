@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Component</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="example"></div>
+
+    <script type="text/babel">
+        var Bacon = React.createClass({
+            render: function() {
+                return (
+                    <div>
+                        <h2>This is a simple component</h2>
+                        <p>I am some sample text</p>
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render(<div>
+                <Bacon />
+                <Bacon />
+                <Bacon />
+            </div>, document.getElementById('example'));
+    </script>
+
+</body>
+</html>
