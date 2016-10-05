@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Template</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <script type="text/babel">
+        var Movie = React.createClass({
+            render: function () {
+                return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <h2>{this.props.genre}</h2>
+                    </div>
+                );
+            }
+        });
+        ReactDOM.render(
+          <div>
+              <Movie title="Avatar" genre="action"/>
+              <Movie title="The notebook" genre="romance"/>
+              <Movie title="Captain America" genre="action"/>
+          </div>
+          , document.getElementById('app'));
+    </script>
+
+</body>
+</html>
