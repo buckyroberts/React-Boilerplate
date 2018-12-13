@@ -8,16 +8,44 @@
     <script src="../../js/react-dom.min.js"></script>
     <script src="../../js/browser.min.js"></script>
 </head>
-<body>
 
-    <div id="container"></div>
+    <body>
+        <div id="example"></div>
 
     <script type="text/babel">
-        ReactDOM.render(
-            <h2>Welcome to React!</h2>,
-            document.getElementById('container')
-        );
-    </script>
 
-</body>
+    var Bacon = React.createClass({
+        render: function() {
+            return (
+                
+                <div> 
+                    <h1>Todays Weather Update</h1>
+                    <p>Please enter the location you would like know the weather for.</p>
+                    <p>Test London for Rain Change Background, Canada for snow, Florida for clouds!</p>
+
+                    <p>Location (State or City): <input id = "city" value="London"></input></p> // watch video 6 and 9
+
+                    <p><button id ="submit" onclick="weatherAsk()">submit</button></p> //video 5 and 6
+
+                            <p id="results">
+                                <ol id="list">
+                                    <p id="temp">Temperature</p>
+                                    <p id="humid">Humidity</p>
+                                    <p id="pres">Pressure</p>
+                                    <p id="maxt">Maximum Temperature for today</p>
+                                    <p id="mint">Minimum Temperature for today</p>
+                                </ol>
+                                </p>
+                </div>
+            );
+        }
+    });
+
+    ReactDOM.render(<div>
+        <Bacon />
+    </div>, document.getElementById('example'));
+
+    </script>
+    </body>
+
 </html>
