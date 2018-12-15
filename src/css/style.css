@@ -1,0 +1,15 @@
+body{
+	text-align: justify;
+	margin-top: 65px;
+	margin-left: 400px;
+	/*background=url(rain.gif);*/
+	background-repeat: no-repeat;
+	background-size: 1400px 700px;
+}
+p{
+	font-weight: bold;
+	font-family: sans-serif;
+}
+h1{
+	font-weight: bold;
+}
