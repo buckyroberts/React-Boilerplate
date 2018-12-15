@@ -1,7 +1,7 @@
 body{
 	text-align: justify;
 	margin-top: 65px;
-	margin-left: 400px;
+	margin-left: 0px;
 	/*background=url(rain.gif);*/
 	background-repeat: no-repeat;
 	background-size: 1400px 700px;
@@ -13,7 +13,7 @@ p{
 h1{
 	font-weight: bold;
 }
-a{
+#button{
     display: block;
     width: 800px;
     height: 250px;
@@ -28,4 +28,6 @@ a{
     padding-top: 55px;
     font-size: 100px;
     text-decoration: none;
+    margin-left: 875px;
 }
+
