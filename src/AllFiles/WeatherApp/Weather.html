@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Data</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.min.js"></script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.min.js"></script> -->
+
+     <!-- <script src="sketch.js" type="text/javascript"></script> -->
+
+     <style>
+      body {
+        padding: 20px;
+      }
+    </style>
+
+  </head>
+  
+  <body id="skies" background="clouds.webp"> 
+
+      <h1>Todays Weather Update</h1>
+
+       <p>Please enter the location you would like know the weather for.</p>
+       <p style="color: yellow">Test London for Rain Change Background, Canada for snow, Florida for clouds!</p>
+
+       <p>Location (State or City): <input id = "city" value="London"></input></p>  <!-- needs work watch video 6 & 9 -->
+     
+       <p><button id ="submit" onclick="weatherAsk()">submit</button></p>
+       <br/>
+       <!-- <p id="temp">Temperature</p>
+       <p id="humid">Humidity</p>
+       <p id="pres">Pressure</p>
+       <p id="maxt">Maximum Temperature for today</p>
+       <p id="mint">Minimum Temperature for today</p>
+         -->
+        <p id="results">  <!-- needs work watch video 5 & 6 and 9 for refs -->
+          <ol id="list">
+            <p id="temp">Temperature</p>
+            <p id="humid">Humidity</p>
+            <p id="pres">Pressure</p>
+            <p id="maxt">Maximum Temperature for today</p>
+            <p id="mint">Minimum Temperature for today</p>
+          </ol>
+        </p>
+
+        <script src="sketch.js" type="text/javascript"></script>
+  </body>
+
+
+
+</html>

@@ -1,0 +1,31 @@
+body{
+	text-align: justify;
+	margin-top: 65px;
+	margin-left: 400px;
+	/*background=url(rain.gif);*/
+	background-repeat: no-repeat;
+	background-size: 1400px 700px;
+}
+p{
+	font-weight: bold;
+	font-family: sans-serif;
+}
+h1{
+	font-weight: bold;
+}
+a{
+    display: block;
+    width: 800px;
+    height: 250px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 290px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 55px;
+    font-size: 100px;
+    text-decoration: none;
+}
