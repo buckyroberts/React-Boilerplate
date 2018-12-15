@@ -5,11 +5,7 @@ var city1='London';
 var apiKey='&appid=0f213e434cbf5b39bafe28133bc5c6d0';
 var units='&units=imperial';
 var input1;
-var humidityI;//tried to grab humitidy level here couldnt
-//var input = select('#city');
-// var input='im here';
-// var input= document.getElementById("city").value;
-// console.log('This is the city you are searching: ' + input);
+var humidityI;
 var url=apiPath + city + apiKey + units;
 
 function setup() {
